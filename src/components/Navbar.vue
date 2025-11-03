@@ -43,18 +43,7 @@ watch(route,(newPath)=>{
   style ="color: var(--text-color-dark);"
   icon="material-symbols:close" width="24" height="24" />
   </router-link>
-  <router-link 
-      v-if="currentPath === '/job-detail' || currentPath === '/user-profile'"
-      to="/job-list" 
-      class="btn-close">
-      <Icon 
-        icon="ic:baseline-arrow-back" 
-        width="24" 
-        height="24"  
-        style="color: 1e1e1e" 
-      />
-  </router-link>
-    
+
   <router-link 
 	      v-if="currentPath === '/job-detail' || currentPath === '/user-profile'"
 	      to="/job-list" 
