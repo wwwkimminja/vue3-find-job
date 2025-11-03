@@ -22,14 +22,14 @@ const handleSignup=async()=>{
 })
 
 if(error){
-  alert(error)
+  alert(error.message)
 }else{
   const { error } = await supabase
   .from('user_table')
   .insert({ tel:tel.value,text:text.value, name:name.value,address:address.value })
 
   if(error){
-    alert(error)
+    alert(error.message)
   }else{
      alert("successfully sign up")
       isLoading.value = false
