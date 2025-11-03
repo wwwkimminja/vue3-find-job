@@ -1,0 +1,40 @@
+/* Noto Sans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap');
+
+/* variable */
+:root{
+  --main-color-dark:#4B3C30;
+  --main-color-light:#D1B000;
+  --text-color-dark:#1e1e1e;
+  --text-color-mid:#666;
+  --text-color-light:#b3b3b3;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+
+body {
+  height: 100vh;
+  width:100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Noto Sans", sans-serif;
+  color: var(--text-color-dark);
+}
+a{
+  color: var(--text-color-dark);
+}
+#app{
+  width: 100%;
+  height: 100%;
+}
+.container {
+  padding:15px;
+}
